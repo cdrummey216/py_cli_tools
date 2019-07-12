@@ -12,8 +12,11 @@ from multiprocessing.dummy import Pool
 pool = Pool(8) # Number of concurrent threads
 
 r = sr.Recognizer()
-files = sorted(os.listdir('parts/'))
+#files = sorted(os.listdir('parts/'))
+files = fileName = str(sys.argv[1])
 print(files)
+
+
 def transcribe(data):
     idx, file = data
     name = "parts/" + file
