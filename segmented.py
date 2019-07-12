@@ -13,7 +13,7 @@ pool = Pool(8) # Number of concurrent threads
 
 r = sr.Recognizer()
 #files = sorted(os.listdir('parts/'))
-files = fileName = str(sys.argv[1])
+files = str(sys.argv[1])
 print(files)
 
 
